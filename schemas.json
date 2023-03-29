@@ -1,16 +1,24 @@
 {
     "schemas" : [
         {
-            "name" : "embedded",
-            "type" : "indexedDB"
-        },
-        {
-            "name" : "local",
-            "type" : "sqlite"
-        },
-        {
-            "name" : "remote",
-            "type" : "sqlite"
+            "name" : "password_manager",
+            "type" : "indexedDB",
+            "version" : 1,
+            "schema" : {
+                "passwords" : {
+                    "id" : "PRIMARY KEY",
+                    "passwords" : "STRING",
+                    "site" : "INTEGER FOREIGN KEY site.id",
+                    "created_at" : "DATETIME",
+                    "updated_at" : "DATETIME NULLABLE"
+                },
+                "site" : {
+                    "id" : "PRIMARY KEY",
+                    "name" : "STRING",
+                    "domain" : "STRING",
+                    "created_at" : "DATETIME"
+                }
+            }
         }
     ]
 }
