@@ -2,18 +2,38 @@
     "schemas" : [
         {
             "name" : "password_manager",
-            "type" : "indexedDB",
-            "version" : 1,
+            "type" : "IndexedDB",
+            "version" : 2,
             "schema" : {
                 "passwords" : {
-                    "id" : "PRIMARY KEY",
+                    "id" : "PRIMARY_KEY",
                     "passwords" : "STRING",
-                    "site" : "INTEGER FOREIGN KEY site.id",
+                    "site" : "INTEGER FOREIGN_KEY site.id",
                     "created_at" : "DATETIME",
                     "updated_at" : "DATETIME NULLABLE"
                 },
-                "site" : {
-                    "id" : "PRIMARY KEY",
+                "sites" : {
+                    "id" : "PRIMARY_KEY",
+                    "name" : "STRING",
+                    "domain" : "STRING",
+                    "created_at" : "DATETIME"
+                }
+            }
+        },
+        {
+            "name" : "password_manager_2",
+            "type" : "IndexedDB",
+            "version" : 1,
+            "schema" : {
+                "passwords" : {
+                    "id" : "PRIMARY_KEY",
+                    "passwords" : "STRING",
+                    "site" : "INTEGER FOREIGN_KEY site.id",
+                    "created_at" : "DATETIME",
+                    "updated_at" : "DATETIME NULLABLE"
+                },
+                "sites" : {
+                    "id" : "PRIMARY_KEY",
                     "name" : "STRING",
                     "domain" : "STRING",
                     "created_at" : "DATETIME"
