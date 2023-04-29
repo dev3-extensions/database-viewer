@@ -1,35 +1,10 @@
 {
   "table": [
     ["id", "name", "type", "description"],
-    [
-      "1",
-      "hfjdshvk",
-      "fdbshafkgdsa",
-      "fbhdsakfceafkchegajkfbcgegayufgbecwayfckgeyaufcgba"
-    ],
-    [
-      "2",
-      "hfjdshvk",
-      "fdbshafkgdsa",
-      "fbhdsakfceafkchegajkfbcgegayufgbecwayfckgeyaufcgba"
-    ],
-    [
-      "3",
-      "hfjdshvk",
-      "fdbshafkgdsa",
-      "fbhdsakfceafkchegajkfbcgegayufgbecwayfckgeyaufcgba"
-    ],
-    [
-      "4",
-      "hfjdshvk",
-      "fdbshafkgdsa",
-      "fbhdsakfceafkchegajkfbcgegayufgbecwayfckgeyaufcgba"
-    ],
-    [
-      "5",
-      "hfjdshvk",
-      "fdbshafkgdsa",
-      "fbhdsakfceafkchegajkfbcgegayufgbecwayfckgeyaufcgba"
-    ]
+    ["1", "testName", "testType", "testDescription"],
+    ["2", "testName", "testType", "testDescription"],
+    ["3", "testName", "testType", "testDescription"],
+    ["4", "testName", "testType", "testDescription"],
+    ["5", "testName", "testType", "testDescription"]
   ]
 }
